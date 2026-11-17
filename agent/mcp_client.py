@@ -5,7 +5,7 @@ from fastmcp.client.transports import StdioTransport
 # Define the explicit transport with command and arguments
 transport = StdioTransport(
     command="python",
-    args=["Day08/mcp_server.py"]
+    args=["Day09/agent/mcp_server.py"]
 )
 
 async def connect():
