@@ -58,8 +58,7 @@ firstpythonaiagent/
 │   ├── executor.py      # Dispatches tool calls to MCP client & parses TextContent
 │   ├── state.py         # State dictionary factory, step tracking & max_steps guard
 │   └── mcp_client.py    # FastMCP StdioTransport client wrapper
-└── Day08/
-    └── mcp_server.py    # FastMCP ("Time Server") exposing @mcp.tool() endpoints
+|   └── mcp_server.py    # FastMCP ("Time Server") exposing @mcp.tool() endpoints
 ```
 
 ### Available MCP Tools (`Day08/mcp_server.py`)
