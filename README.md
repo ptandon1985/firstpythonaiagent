@@ -61,7 +61,7 @@ firstpythonaiagent/
 |   └── mcp_server.py    # FastMCP ("Time Server") exposing @mcp.tool() endpoints
 ```
 
-### Available MCP Tools (`Day08/mcp_server.py`)
+### Available MCP Tools (`Day09/agent/mcp_server.py`)
 | Tool Name | Description |
 | :--- | :--- |
 | `current_time` | Returns the current local date and time (`YYYY-MM-DD HH:MM:SS`). |
@@ -94,7 +94,7 @@ firstpythonaiagent/
 
 ## Usage
 
-Run the agent from the repository root so `StdioTransport` resolves `Day08/mcp_server.py`:
+Run the agent from the repository root so `StdioTransport` resolves `Day09/agent/mcp_server.py`:
 
 ```bash
 python agent/main.py
