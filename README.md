@@ -15,8 +15,8 @@ flowchart TD
     classDef llm fill:#451a03,stroke:#fbbf24,stroke-width:2px,color:#f8fafc
 
     Start(["Start: main.py"]):::main --> LoadEnv["Load .env: BASE_URL, API_KEY, MODEL"]:::main
-    LoadEnv --> Connect["mcp_client.connect<br>StdioTransport: python Day08/mcp_server.py"]:::mcp
-    Connect <-->|"Spawn Subprocess"| MCPServer["Day08/mcp_server.py<br>FastMCP Time Server<br>- current_time<br>- roll_dice<br>- generate_password"]:::mcp
+    LoadEnv --> Connect["mcp_client.connect<br>StdioTransport: python Day09/agent/mcp_server.py"]:::mcp
+    Connect <-->|"Spawn Subprocess"| MCPServer["Day09/agent/mcp_server.py<br>FastMCP Time Server<br>- current_time<br>- roll_dice<br>- generate_password"]:::mcp
     Connect --> Discover["mcp_client.discover_tools<br>client.list_tools"]:::mcp
     Discover --> UserIn["CLI Prompt: user_request from input"]:::main
     UserIn --> InitState["state.py: create_state<br>current_step=0, max_steps=5, finished=False"]:::state
